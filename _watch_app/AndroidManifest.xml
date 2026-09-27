@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.astrbot.watchsync.watch"
+    android:versionCode="3"
+    android:versionName="1.2">
+
+    <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="27" />
+
+    <!-- 经典蓝牙 RFCOMM 客户端（Android 8.1 上为安装期权限） -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 收到新文本时短振动提醒 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.type.watch" android:required="false" />
+
+    <application
+        android:label="@string/app_name"
+        android:icon="@drawable/icon"
+        android:allowBackup="false">
+
+        <!-- 主界面：打开时自动连手机同步，零后台 -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Material.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 蓝牙客户端同步服务：仅在 app 打开期间运行 -->
+        <service
+            android:name=".SyncService"
+            android:exported="false" />
+    </application>
+</manifest>

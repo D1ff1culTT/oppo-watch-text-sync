@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- 通知栏小图标：纯白手表剪影 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M9,1 h6 v3.5 h-6 z M9,19.5 h6 v3.5 h-6 z M12,5.5 a6.5,6.5 0 1,0 0,13 a6.5,6.5 0 1,0 0,-13 z" />
+</vector>

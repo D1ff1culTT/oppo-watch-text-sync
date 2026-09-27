@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# 构建产物与签名密钥（keystore 属于敏感文件）
+_android_build/out/
+*.apk
+*.keystore
+
+# 离线工具链（用 _android_build/_dl_tools.py 重新下载）
+_android_build/android-9/
+_android_build/_platform27/
+_android_build/ecj.jar
+_android_build/build/
+
+# IDE / 系统
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store

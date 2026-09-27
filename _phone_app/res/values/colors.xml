@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#1E88E5</color>
+    <color name="primary_dark">#1565C0</color>
+    <color name="bg">#F2F5F9</color>
+    <color name="card">#FFFFFF</color>
+    <color name="text_main">#1A232E</color>
+    <color name="text_sub">#8A97A6</color>
+    <color name="stroke">#E3E9F0</color>
+    <color name="dot_ok">#9FE8A8</color>
+    <color name="dot_wait">#FFD08A</color>
+</resources>
