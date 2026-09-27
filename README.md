@@ -49,6 +49,8 @@ python build_apk.py --app _watch_app --name WatchTextSync --min-sdk 24 --target-
 
 ## 安装
 
+不想自己构建？直接到 [Releases](https://github.com/D1ff1culTT/oppo-watch-text-sync/releases) 下载两个 APK（手机端 + 手表端）。
+
 ```bash
 # 手机（开启 USB 调试后）
 adb install -r _android_build/out/PhoneTextSync.apk
